@@ -18,6 +18,12 @@ namespace MyDatabase.Seeding
 
         public void SeedStudents()
         {
+            Boomer b1 = new Boomer() { Name = "Costas" };
+            Boomer b2 = new Boomer() { Name = "Ioannis" };
+            Boomer b3 = new Boomer() { Name = "Giannis" };
+            Boomer b4 = new Boomer() { Name = "Niki" };
+            Boomer b5 = new Boomer() { Name = "Dimitris" };
+
             Student s1 = new Student() { Name = "Hector",Age =34 };
             Student s2 = new Student() { Name = "Mpampis", Age = 29 };
             Student s3 = new Student() { Name = "Lakis", Age = 26 };
@@ -37,6 +43,12 @@ namespace MyDatabase.Seeding
             db.Projects.Add(p2);
             db.Projects.Add(p3);
             db.Projects.Add(p4);
+
+            db.Boomers.Add(b1);
+            db.Boomers.Add(b2);
+            db.Boomers.Add(b3);
+            db.Boomers.Add(b4);
+            db.Boomers.Add(b5);
 
             db.Students.Add(s1);
             db.Students.Add(s2);
