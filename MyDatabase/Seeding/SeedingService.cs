@@ -1,9 +1,4 @@
 ﻿using Entities.School;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyDatabase.Seeding
 {
@@ -18,7 +13,7 @@ namespace MyDatabase.Seeding
 
         public void SeedStudents()
         {
-            Student s1 = new Student() { Name = "Hector",Age =34 };
+            Student s1 = new Student() { Name = "Hector", Age = 34 };
             Student s2 = new Student() { Name = "Mpampis", Age = 29 };
             Student s3 = new Student() { Name = "Lakis", Age = 26 };
             Student s4 = new Student() { Name = "Fanis", Age = 23 };
@@ -58,7 +53,20 @@ namespace MyDatabase.Seeding
             db.Janitors.Add(j3);
             db.Janitors.Add(j4);
         }
+        public void SeedTrainers()
+        {
+            Trainer t1 = new Trainer() { Name="Dimitris" };
+            Trainer t2 = new Trainer() { Name="Niki" };
+            Trainer t3 = new Trainer() { Name="Costas" };
+            Trainer t4 = new Trainer() { Name="Ioannis" };
+            Trainer t5 = new Trainer() { Name = "Giannis" };
 
+            db.Trainers.Add(t1);
+            db.Trainers.Add(t2);
+            db.Trainers.Add(t3);
+            db.Trainers.Add(t4);
+            db.Trainers.Add(t5);
+        }
 
     }
 }
