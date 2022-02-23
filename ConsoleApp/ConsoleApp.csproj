@@ -69,6 +69,10 @@
       <Project>{d94d7d93-ef3e-40c3-ba53-bbcf2e3086a5}</Project>
       <Name>MyDatabase</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PersistanceGeneric\PersistanceGeneric.csproj">
+      <Project>{b77b98fa-7ec7-4588-ba9d-3e6e347b7fbd}</Project>
+      <Name>PersistanceGeneric</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PersistanceLayerNoGeneric\PersistanceLayerNoGeneric.csproj">
       <Project>{c3ba7c3f-4e35-4a20-b114-bf29e6b2e36a}</Project>
       <Name>PersistanceLayerNoGeneric</Name>

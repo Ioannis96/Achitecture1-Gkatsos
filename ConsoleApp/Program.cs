@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using PersistanceLayerNoGeneric.Repositories;
 using Entities.School;
 using MyDatabase;
+using PersistanceGeneric.Repositories;
+using ProjectRepository = PersistanceGeneric.Repositories.ProjectRepository;
 
 namespace ConsoleApp
 {
@@ -13,14 +15,28 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            ApplicationDbContext db = new ApplicationDbContext();
-            StudentRepository studentService = new StudentRepository(db);
-            ProjectRepository projectService = new ProjectRepository(db);
+            ApplicationDbContext context = new ApplicationDbContext();
 
-            foreach (var pro in projectService.GetAll())
+            GenericRepository<Student> studentService = new GenericRepository<Student>(context);
+            GenericRepository<Project> projectService = new GenericRepository<Project>(context);
+
+            ProjectRepository projectRepository = new ProjectRepository(context);
+
+            var projects = projectRepository.GetProjectsOrderByAsc();
+
+            foreach (var item in projects)
             {
-                Console.WriteLine(pro.Title + " " + pro.Student.Name);
+                Console.WriteLine(item);
             }
+
+
+            var students = studentService.GetAll();
+            foreach (var stu in students)
+            {
+                Console.WriteLine(stu.Name);
+            }
+
+            
 
         }
     }
