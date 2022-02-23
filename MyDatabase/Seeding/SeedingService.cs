@@ -46,5 +46,19 @@ namespace MyDatabase.Seeding
             db.SaveChanges();
         }
 
+        public void SeedJanitors()
+        {
+            Janitor j1 = new Janitor() { Name = "Lampis" };
+            Janitor j2 = new Janitor() { Name = "Fampis" };
+            Janitor j3 = new Janitor() { Name = "Tampis" };
+            Janitor j4 = new Janitor() { Name = "Bampis" };
+
+            db.Janitors.Add(j1);
+            db.Janitors.Add(j2);
+            db.Janitors.Add(j3);
+            db.Janitors.Add(j4);
+        }
+
+
     }
 }
