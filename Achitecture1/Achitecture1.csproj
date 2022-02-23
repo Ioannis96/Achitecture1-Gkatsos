@@ -182,6 +182,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api Controllers\CourseController.cs" />
     <Compile Include="Controllers\Api Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -255,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Course\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -277,6 +279,10 @@
     <ProjectReference Include="..\MyDatabase\MyDatabase.csproj">
       <Project>{d94d7d93-ef3e-40c3-ba53-bbcf2e3086a5}</Project>
       <Name>MyDatabase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersistanceGeneric\PersistanceGeneric.csproj">
+      <Project>{B77B98FA-7EC7-4588-BA9D-3E6E347B7FBD}</Project>
+      <Name>PersistanceGeneric</Name>
     </ProjectReference>
     <ProjectReference Include="..\PersistanceLayerNoGeneric\PersistanceLayerNoGeneric.csproj">
       <Project>{C3BA7C3F-4E35-4A20-B114-BF29E6B2E36A}</Project>

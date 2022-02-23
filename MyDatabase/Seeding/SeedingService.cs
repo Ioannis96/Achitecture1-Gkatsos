@@ -28,6 +28,18 @@ namespace MyDatabase.Seeding
             Project p3 = new Project() { Title = "Python" };
             Project p4 = new Project() { Title = "HTML" };
 
+            Course c1 = new Course() { Title = "Course in C#" };
+            Course c2 = new Course() { Title = "Course in Java" };
+            Course c3 = new Course() { Title = "Course in Python" };
+            Course c4 = new Course() { Title = "Course in HTML" };
+            Course c5 = new Course() { Title = "Course in C++" };
+
+            db.Courses.Add(c1);
+            db.Courses.Add(c2);
+            db.Courses.Add(c3);
+            db.Courses.Add(c4);
+            db.Courses.Add(c5);
+
             p1.Student = s1;
             p2.Student = s2;
             p3.Student = s3;
