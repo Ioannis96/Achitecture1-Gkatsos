@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entities.School
+{
+    internal class Boomer
+    {
+        public int BoomerId { get; set; }
+        public string Name { get; set; }
+    }
+}
