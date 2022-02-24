@@ -188,6 +188,7 @@
     <Compile Include="Controllers\Api Controllers\BoomersController.cs" />
 
     <Compile Include="Controllers\Api Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\Api Controllers\TrainerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
@@ -285,7 +286,11 @@
       <Name>MyDatabase</Name>
     </ProjectReference>
     <ProjectReference Include="..\PersistanceGeneric\PersistanceGeneric.csproj">
+
+      <Project>{b77b98fa-7ec7-4588-ba9d-3e6e347b7fbd}</Project>
+
       <Project>{B77B98FA-7EC7-4588-BA9D-3E6E347B7FBD}</Project>
+ 
       <Name>PersistanceGeneric</Name>
     </ProjectReference>
     <ProjectReference Include="..\PersistanceLayerNoGeneric\PersistanceLayerNoGeneric.csproj">

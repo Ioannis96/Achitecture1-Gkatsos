@@ -28,9 +28,13 @@ namespace MyDatabase
         public DbSet<Project> Projects { get; set; }
         public DbSet<Janitor> Janitors { get; set;}
 
+        public DbSet<Trainer> Trainers { get; set; }
+
+
         public DbSet<Course> Courses { get; set;}
 
         public DbSet<Boomer> Boomers { get; set;}
+
 
     }
 }
