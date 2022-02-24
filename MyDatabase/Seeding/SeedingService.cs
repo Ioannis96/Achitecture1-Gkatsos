@@ -1,4 +1,5 @@
 ﻿using Entities.School;
+using System.Collections.Generic;
 
 namespace MyDatabase.Seeding
 {
@@ -92,6 +93,21 @@ namespace MyDatabase.Seeding
             db.Trainers.Add(t3);
             db.Trainers.Add(t4);
             db.Trainers.Add(t5);
+        }
+        public void SeedDoctors()
+        {
+            var doctors = new List<Doctor>()
+            {
+                new Doctor() { FirstName ="Mpampis",LastName="Magkioros",Age=35},
+                new Doctor() { FirstName ="Ioulia",LastName="Mparmpouni",Age=30},
+                new Doctor() { FirstName ="Sotos",LastName="Toxovolos",Age=39},
+                new Doctor() { FirstName ="Crunch",LastName="Cookie",Age=41},
+                new Doctor() { FirstName ="Bob",LastName="Omastoras",Age=35},
+                new Doctor() { FirstName ="Threw",LastName="Exception",Age=32},
+            };
+
+            db.Doctors.AddRange(doctors);
+            db.SaveChanges();
         }
 
     }
