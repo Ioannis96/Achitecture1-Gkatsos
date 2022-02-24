@@ -13,7 +13,15 @@ namespace MyDatabase.Seeding
 
         public void SeedStudents()
         {
-            Student s1 = new Student() { Name = "Hector", Age = 34 };
+
+
+            Boomer b1 = new Boomer() { Name = "Costas" };
+            Boomer b2 = new Boomer() { Name = "Ioannis" };
+            Boomer b3 = new Boomer() { Name = "Giannis" };
+            Boomer b4 = new Boomer() { Name = "Niki" };
+            Boomer b5 = new Boomer() { Name = "Dimitris" };
+
+            Student s1 = new Student() { Name = "Hector",Age =34 };
             Student s2 = new Student() { Name = "Mpampis", Age = 29 };
             Student s3 = new Student() { Name = "Lakis", Age = 26 };
             Student s4 = new Student() { Name = "Fanis", Age = 23 };
@@ -22,6 +30,18 @@ namespace MyDatabase.Seeding
             Project p2 = new Project() { Title = "Java" };
             Project p3 = new Project() { Title = "Python" };
             Project p4 = new Project() { Title = "HTML" };
+
+            Course c1 = new Course() { Title = "Course in C#" };
+            Course c2 = new Course() { Title = "Course in Java" };
+            Course c3 = new Course() { Title = "Course in Python" };
+            Course c4 = new Course() { Title = "Course in HTML" };
+            Course c5 = new Course() { Title = "Course in C++" };
+
+            db.Courses.Add(c1);
+            db.Courses.Add(c2);
+            db.Courses.Add(c3);
+            db.Courses.Add(c4);
+            db.Courses.Add(c5);
 
             p1.Student = s1;
             p2.Student = s2;
@@ -32,6 +52,12 @@ namespace MyDatabase.Seeding
             db.Projects.Add(p2);
             db.Projects.Add(p3);
             db.Projects.Add(p4);
+
+            db.Boomers.Add(b1);
+            db.Boomers.Add(b2);
+            db.Boomers.Add(b3);
+            db.Boomers.Add(b4);
+            db.Boomers.Add(b5);
 
             db.Students.Add(s1);
             db.Students.Add(s2);
