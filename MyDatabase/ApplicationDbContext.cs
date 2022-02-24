@@ -34,6 +34,7 @@ namespace MyDatabase
         public DbSet<Course> Courses { get; set;}
 
         public DbSet<Boomer> Boomers { get; set;}
+        public DbSet<Doctor> Doctors { get; set;}
 
 
     }
